@@ -1,0 +1,76 @@
+
+.App{
+  border:1px solid #3d3d3d;
+  margin:50px 30% ;
+  padding: 25px 15px;
+  width: 100vh;
+  text-align: center;
+  background-color: #27282c;
+  color: #fff;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.container ul li {
+  width: 170px;
+  overflow-wrap: break-word;
+  list-style-type: "🗹";
+  cursor: pointer;
+}
+.done{
+  text-decoration: line-through;
+  color :rgb(105, 240, 130);
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span{
+  cursor: pointer;
+}
+button{
+  position: relative;
+  background: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing:2 ;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: 0.5s;
+
+width: 30%;
+left: 35%;
+
+}
+button:hover{
+  background: #6eff3e;
+  letter-spacing: 4px;
+  color: #6eff3e;
+  box-shadow: 0 0 35px #6eff3e;
+} 
+button::before{
+  content: '';
+  position: absolute;
+  inset:2px;
+  background: #27282c;
+}
+button span{
+  position: relative;
+  z-index: 1;
+}
+
+.Enter{
+  position: relative;
+  height: 80px;
+  line-height: 30px;
+}
+input{
+ font-size: 30px;
+ border-radius: 10px;
+border: 2px solid #6eff3e;
+text-align: center;
+}
